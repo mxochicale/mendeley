@@ -1,0 +1,11 @@
+# Miguel Xochicale <http://mxochicale.github.io/>
+
+[Desktop Entry]
+Name=Mendeley
+Comment=
+Terminal=false
+Type=Application
+Categories=
+
+Exec=/home/map479-admin/.mendeleydesktop/mendeleydesktop-1.17.9-linux-x86_64/bin/./mendeleydesktop
+Icon=/home/map479-admin/.mendeleydesktop/mendeleydesktop-1.17.9-linux-x86_64/share/icons/hicolor/128x128/apps/mendeleydesktop.png
