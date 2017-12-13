@@ -24,7 +24,6 @@
 # mendeleydesktop-1.17-dev2-linux-x86_64
 # mendeleydesktop-1.17-dev5-linux-x86_64
 
-
 mendeley_latest_version=mendeleydesktop-1.17.9-linux-x86_64 # Updated on Tue Apr 11 11:37:26 BST 2017
 
 

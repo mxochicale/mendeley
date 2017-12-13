@@ -1,38 +1,37 @@
-Mendeley Repository
-=================
+# I am not using [Mendeley](https://www.mendeley.com/) since 2017
+These are the reasons:
+* The migration from machine to machine might be time consuming, specially
+if you don't know anything about sqlite3.
+* If you naively synchronise your local database with the online database,
+you will have, at some point, a notification about a payment wall and if you want to
+continue using the service which is a valid and understandable business model
+but I like projects that have few or no barriers.
+* I dislike that idea that all my references and annotations of my research
+interests are part of mendelay's databases. I believe that such references an
+annotations, maybe only meaningful for me, should be available for anyone, anywhere.
+* Mendeley is neither free software nor open source and this is the first point of
+more reasons to [move away from mendeley](https://github.com/rdiaz02/Adios_Mendeley#why-move-away-from-mendeley)
 
-Mendeley is a free reference manager and academic social network that can help you organize your research, collaborate with others online, and discover the latest research. https://www.mendeley.com/
+# Looking for alternatives for mendelay
+* [Zotero](https://github.com/flinz/mendeley2zotero)
+* I am very interested in using GitHub as a issues like [arXivTimes](https://github.com/arXivTimes/arXivTimes/issues).
+You can add tags in the issues and add extra comments in the issues.
 
 
-
-I have created this branch to mantain a clean library in Mendeley.
-Because my little experience with sqlite database usage, I have not made
-lots of progress. I have just basically created some shell scripts
-to migrate the library from computer to computer and to get the latest
-version of mendeley.
-
-# TODO:
-* migrate library to another computer as an example
-* change the version of the OS and architecture
-* document the following files b_replace_libary.sh, c_get_mendeley_database.sh,
-  mendeley_launcher.desktop, perez.xochicale@gmail.com@www.mendeley.com.sqlite
+# Outdated files
 
 
-
-#  Usage of "a_get_lastest_mendeley.sh"
+## a_get_lastest_mendeley.sh
   1. check the lastest version https://www.mendeley.com/release-notes/development/
-  2. update mendeley_latest_version
+  2. update mendeley_latest_version (Line 27)
   3. update lines to be commented "sed -i '10,11 s/^/#/' mendeley_launcher.desktop"
   4. run the current script
 
 
-# Tricks in mendeley
-Go to Synchronization options to disable Synchronize attached files
+## disable synchronize attached files
+  Go to Synchronization options to disable Synchronize attached files
 
-
-
-
-# Migrate from one computer to another
+## Migrate from one computer to another
 
 ** How can I migrate my data from one PC to another?
 Advanced users can also migrate by copying their database file from one machine to another.
@@ -71,9 +70,7 @@ Install SQLite Database Browser in Ubuntu
 $ sudo apt-get install sqlitebrowser
 
 
-
-
-### how to modify Mendeley’s database manually?
+## how to modify Mendeley’s database manually?
 
 
 
@@ -107,16 +104,41 @@ sqlite3 $db  "update Files set localUrl = replace(localUrl, '/map479-admin/', '/
 
 ```
 
-# Advices
+## Advices
 
 
 
 This already works for me in OneDrive.
 
-I have my stored PDFs in a OneDrive folder that I called Mendeley. In the file organizer tab under Tools/Options, I refer the location as C:\Users\[xxx]\OneDrive\Mendeley (in which [xxx] is my different username for each computer where I have this set-up). Furthermore I ensure that the way Mendeley renames the files are always the same on each computer (i.e. checked "rename document files" and renames the Author Year Title "Hyphen-separated" (order and style must be the same everywhere too, of course)). This set-up works like a charm on all my devices (I have mendeley and OneDrive installed on my Win7 lab computer, my Win8.1 home desktop and my Win10 laptop).
+I have my stored PDFs in a OneDrive folder that I called Mendeley. In the file
+organizer tab under Tools/Options, I refer the location as
+C:\Users\[xxx]\OneDrive\Mendeley (in which [xxx] is my different username for each
+  computer where I have this set-up). Furthermore I ensure that the way Mendeley
+  renames the files are always the same on each computer (i.e. checked
+    "rename document files" and renames the Author Year Title "Hyphen-separated"
+    (order and style must be the same everywhere too, of course)).
+    This set-up works like a charm on all my devices (I have mendeley and OneDrive
+      installed on my Win7 lab computer, my Win8.1 home desktop and my Win10 laptop).
 
-I do have to say that in the beginning (I had this set-up on my home desk first, added the laptop a few months later) Mendeley tried to download some of the PDFs into the OneDrive folder (and added a (1) behind the file name). I think this is because OneDrive had not yet synced the folder on the laptop. This was a one time issue though. I stopped Mendeley, waited until all the files in OneDrive were synced, restarted Mendeley, waited until everything was synced in mendeley, then cleaned up the folder using "Tidy Up" (Tools/Options/File Organizer) --> Archive unused files --> delete Archived files. I now always wait until OneDrive synced everything onto whatever computer I am using and only after that I open Mendeley. No sync issues after that anymore.
+I do have to say that in the beginning (I had this set-up on my home desk first,
+  added the laptop a few months later) Mendeley tried to download some of the
+  PDFs into the OneDrive folder (and added a (1) behind the file name).
+  I think this is because OneDrive had not yet synced the folder on the laptop.
+  This was a one time issue though. I stopped Mendeley, waited until all the
+  files in OneDrive were synced, restarted Mendeley, waited until everything
+  was synced in mendeley, then cleaned up the folder using "Tidy Up"
+  (Tools/Options/File Organizer) --> Archive unused files --> delete Archived files.
+  I now always wait until OneDrive synced everything onto whatever computer
+  I am using and only after that I open Mendeley. No sync issues after that anymore.
 
 Double check your "rename" settings and if they are identical, perhaps it is a Drive/Dropbox issue rather than a Mendeley one.
+[Source](https://feedback.mendeley.com/forums/4941-general/suggestions/11024835-to-integrate-mendeley-with-google-drive-and-dropbo)
 
-https://feedback.mendeley.com/forums/4941-general/suggestions/11024835-to-integrate-mendeley-with-google-drive-and-dropbo
+
+## TODO:
+In case that someone wants to use medeley, these are some of my pending points
+when I was actively using medeley ( 2014 and 2015)
+- [ ] migrate library to another computer as an example
+- [ ] change the version of the OS and architecture
+- [ ] document the following files b_replace_libary.sh, c_get_mendeley_database.sh,
+  mendeley_launcher.desktop, perez.xochicale@gmail.com@www.mendeley.com.sqlite
