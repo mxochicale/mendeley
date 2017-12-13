@@ -14,9 +14,9 @@ more reasons to [move away from mendeley](https://github.com/rdiaz02/Adios_Mende
 
 # Looking for alternatives for mendelay
 * [Zotero](https://github.com/flinz/mendeley2zotero)
-* I am very interested in using GitHub as a issues like [arXivTimes](https://github.com/arXivTimes/arXivTimes/issues).
-You can add tags in the issues and add extra comments in the issues.
-
+* I am very interested in using GitHub as a replacement of Mendelay and Zotero
+using the issue system as in [arXivTimes](https://github.com/arXivTimes/arXivTimes/issues).
+I personally like the idea of adding tags and any extra information in the issues.
 
 # Outdated files
 
